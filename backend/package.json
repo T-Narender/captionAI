@@ -1,0 +1,25 @@
+{
+  "name": "captionai-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "api:smoke": "node scripts/apiSmoke.js",
+    "socket:smoke": "node scripts/socketSmoke.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.11.0",
+    "morgan": "^1.12.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "socket.io-client": "^4.8.4"
+  }
+}

@@ -1,0 +1,10 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.34,<1.0
+faster-whisper>=1.1,<2.0
+# faster-whisper currently passes metadata_errors to av.open(); PyAV 19 removed it.
+av>=14,<19
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy>=1.26,<3
+torch>=2.6,<3
+transformers>=4.45,<5
+speechbrain>=1.0,<2
